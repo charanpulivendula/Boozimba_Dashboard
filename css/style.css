@@ -1,0 +1,410 @@
+@font-face{
+    font-family: googlesans;
+    src: url(../fonts/GoogleSans-Bold.ttf)
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-color: #00001a !important;
+    font-family: googlesans !important;
+
+}
+#toppage{
+
+    width: 100%;
+    height: 420px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../images/bestnight.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+#toppage2{
+
+    width: 100%;
+    height: 420px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(../images/features.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+.navigation{
+    background-color: transparent;
+    
+    
+    
+}
+.navigation ul{
+    
+position: -webkit-sticky; /* Safari */
+  position: absolute;
+  padding: 2%;
+  height: 100%;
+  left: 63%;
+  
+  list-style-type: none;
+  
+
+      
+}
+.navigation ul li{
+    float: right;
+    
+    
+}
+.navigation ul li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+  text-decoration: none;
+}
+.navigation ul li a h1{
+    color: white;
+    font-size: 25px;
+    opacity: 0.7;
+}
+.image{
+    top: 3%;
+    left: 3%;
+    position: fixed;
+    
+
+}
+.navigation ul li a h1:hover{
+    
+    opacity: 1;
+    transition: 0.5s;
+}
+.navigation ul li a h1 .active{
+    opacity: 1;
+}
+#photos img{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 300px;
+    width: 300px;
+    
+    
+    
+
+}
+#photos img:hover{
+    animation: rotate 1ms linear forwards;
+    /* -webkit-animation: rotate 1.5s linear forwards; */
+    /* -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; */
+   
+}
+@keyframes rotate{
+    100%{
+        /* transform: rotate(360deg); */
+        transform: scale(1.1);
+        -webkit-filter: drop-shadow(5px 5px  #00394d);
+         filter: drop-shadow(5px 5px  #00394d);
+    }
+
+}
+@-webkit-keyframes rotate{
+    100%{
+        /* transform: rotate(360deg); */
+    }
+
+}
+
+
+#bottomhalf{
+    font-family: googlesans !important;
+}
+
+#left{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#right{
+    position: relative;
+    float: right;
+    
+    margin-left: 360px;
+    margin-top: 10px;
+}
+#leftpage h2{
+    
+    
+    background: -webkit-linear-gradient(left,#ff3333,  #ff5c33);
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    
+}
+#rightpage h2{
+    
+    
+    background: -webkit-linear-gradient(right,#ff9900, #ffd633);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+p{
+    
+    font-size: 18px;
+    color: whitesmoke;
+    
+}
+
+/* categories */
+.ui_card {
+    /* padding: 140px 0; */
+    padding-top: 140px;
+    width: 90vw;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+      
+    
+    display: grid;
+    grid-gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(3, 300px);
+      grid-template-rows: auto; }
+  
+  .ui_card > .box {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #000000;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      
+      text-align: left;
+      transition: .5s; }
+  
+  .ui_card > .box .imgBox .img {
+      transition: .5s;
+  }
+  
+  .ui_card > .box .content {
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      padding: 20px;
+      transition: .5s;
+      opacity: 0; }
+.ui_card > .box .content .first ,.second ,.third{
+    width: 200px;
+    height: 40px;
+    /* background: #00001a; */
+    align-items: center;
+
+
+}
+.ui_card > .box .content .first h2{
+    
+   /* color: 	 #ff3333; */
+   color: #ff4d4d;
+}
+.ui_card > .box .content .second h2{
+    
+    color: #66b3ff;
+ }
+ .ui_card > .box .content .third h2{
+    
+    color: #ffd633;
+ }
+
+  
+  .ui_card > .box .content h2 {
+      font-size: 30px;
+      vertical-align: 40px;
+      line-height: 40px;
+       
+      color: #ffffff;
+      font-weight: 700;
+      
+      /* text-align: center; */
+      position: relative;
+      
+      margin: 0; }
+  
+  .ui_card > .box .content p {
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 400;
+      padding: 10px 0 }
+  
+  .ui_card > .box .content .btnD {
+      border: none;
+      background: #00001a;
+      color: #ffffff;
+      font-size: 18px;
+      padding: 10px 20px;
+      font-weight: 700;
+      transition: .5s;
+      text-decoration: none; }
+  
+  .ui_card > .box .content .one:hover {
+      background: #ff4d4d;
+      color: black;
+     }
+    .ui_card > .box .content .two:hover {
+    background: #66b3ff;
+    color: black; }
+    .ui_card > .box .content .three:hover {
+    background: #ffd633;
+    color: black; }
+  
+  .ui_card > .box:hover .imgBox img {
+      opacity: .5;
+      transition: .5s;
+      transform: translateY(-40px); }
+  
+  .ui_card > .box:hover .content {
+      opacity: 1;
+      bottom: 0; }
+  
+  .ui_card > .firstbox:hover {
+      transform: translateY(-30px);
+      box-shadow: 0 5px 15px #ff4d4d }
+    .ui_card > .secondbox:hover {
+        transform: translateY(-30px);
+        box-shadow: 0 5px 15px  #66b3ff}
+    .ui_card > .thirdbox:hover {
+            transform: translateY(-30px);
+            box-shadow: 0 5px 15px #ffd633 }
+
+/* contact */
+#contactback{
+    background: url('../images/contact-us-background.jpg'); 
+    padding-top: 30px; 
+    background-size:cover; 
+    background-position: 50% 50%; 
+    background-repeat: none; 
+    position :relative;
+    background-color: rgba(0,0,0,0.5); 
+    
+    top: 0; left: 0; 
+    width: 100%; height: 800px;
+
+}
+
+
+.contactDetails {
+padding: 20px;
+}
+.contactDetails div div div {
+padding: 12px;
+font-size: 18px;
+}
+.contactDetails i {
+margin-right: 10px;
+background: black;
+color: white;
+border-radius: 20px;
+padding: 5px;
+}
+.contactForm {
+text-align: left;
+margin-top: 30px;
+}
+
+.contactDetails {
+text-align: left;
+font-size: 20px;
+color: #fff;
+
+}
+.contactDetails p{
+font-size: 25px;
+}
+
+.textarea-group {
+width: 100%;
+}
+#contact {
+margin-top: 40px;
+text-align: center;
+}
+#contact h1{
+color: #fff;
+font-size: 70px;
+
+}
+#contact h4{
+color: #fff;
+}
+
+#contact hr {
+border-width: 2px;
+border-color:#fff;
+max-width: 150px;
+margin-bottom: 30px;
+}
+
+#contactButton {
+color: rgb(255,255,255) !important;
+background: rgb(55, 210, 195) !important;
+border-color: rgb(255,255,255) !important;
+border-radius: 0px !important;
+}
+#contactButton:hover {
+color: rgb(55, 210, 195) !important;
+background: rgb(255,255,255) !important;
+border-color: rgb(55, 210, 195) !important;
+}
+.contactForm .input-group input, textarea {
+background: rgb(31,31,31) !important;
+color: rgb(255,255,255) !important;
+border-radius: 0px !important;
+text-transform: none !important;
+border-bottom-left-radius: 0 !important;
+border-top-left-radius: 0 !important;
+}
+.contactForm .input-group input::placeholder {
+color: rgb(255,255,255) !important;
+}
+.contactForm .input-group textarea::placeholder {
+color: rgb(255,255,255) !important;
+}
+.contactForm .input-group input:-ms-input-placeholder {
+color: rgb(255,255,255) !important;
+}
+.contactForm .input-group textarea:-ms-input-placeholder {
+color: rgb(255,255,255) !important;
+}
+.contactForm .input-group input::-ms-input-placeholder {
+color: rgb(255,255,255) !important;
+}
+.contactForm .input-group textarea::-ms-input-placeholder {
+color: rgb(255,255,255) !important;
+}
+.contactForm .input-group-addon {
+background: rgb(55, 210, 195) !important;
+color: rgb(255,255,255) !important;
+border-radius: 0px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+}
+.contactForm .input-group-addon:firstChild {
+margin-left: 0px;
+}
+.contactForm {
+background: rgba(0,0,0,0) !important;
+border: none !important;
+color: rgb(255,255,255) !important;
+padding: 20px 10px;
+margin-bottom: 50px;
+}
+.contactForm .form-control {
+border: 1px solid rgb(255,255,255);
+}
+#contactFormNameLabel,#contactFormEmailLabel,#contactFormSubjectLabel,#contactFormMessageLabel{
+font-size: 20px;
+color: #fff;
+}
